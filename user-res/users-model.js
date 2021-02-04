@@ -4,7 +4,7 @@ async function add(user) {
   const userId = await db('users').insert(user)
   return userId
 }
-//? README  Resolves to the newly inserted scheme, including `id`.
+
 
 function update(changes, id) {
   return db("users")

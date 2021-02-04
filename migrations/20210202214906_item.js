@@ -3,6 +3,7 @@ exports.up = async function(knex) {
 		table.increments()
 		table.string("location").notNull()
 		table.string("name").notNull()
+		table.integer("quantity").notNull()
     table.text("description").notNull()
     table.float("price").notNull()
     table
