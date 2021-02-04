@@ -4,6 +4,7 @@ module.exports = {
 
   development: {
     client: 'sqlite3',
+		saveUninitialized: true,
     useNullAsDefault:true,
     connection: {
       filename: "./data/market.db3"
