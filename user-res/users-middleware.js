@@ -3,6 +3,8 @@ const constant = require("./secret")
 
 function restrict() {
 	return async (req, res, next) => {
+		if (process.env.NODE_ENV === 'test') return next()
+
 		const { currentUser } = req.session
 		const token = req.headers.authorization
 
